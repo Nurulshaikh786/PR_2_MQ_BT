@@ -60,7 +60,7 @@
   }
 }
 
-@media(max-width : 400px){
+@media(max-width : 562px){
   .swiper-button-next,
     .swiper-button-prev{
       display: none;
@@ -78,7 +78,6 @@
     }
     .swiper-pagination{
       display: block;
-      fill: white;
     }
 }
 
