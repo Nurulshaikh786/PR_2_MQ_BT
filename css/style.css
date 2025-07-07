@@ -61,34 +61,104 @@ a{
 .mb-2{
     margin-bottom: 2rem;
 }
-/* Header Section Start */
-header{
-    padding: 20px;
-    margin: 6px;
+.divider-50h {
+    height: 50px;
 }
-.navigation .logo h2{
-   margin-bottom: 18px;
-    font-size: 24px;
-    font-weight: 900;
-}
-.navigation .logo h2 span{
-    font-size: 58px;
-    color: var(--theme-orange);
-} 
 
-.nav-menu ul li a{
-    margin-left: 40px;
-    font-size: 16px;
+.mb-2 {
+    margin-bottom: 2rem;
+}
+/* Header Section Start */
+header {
+    background-color: #f7f7f7;
+    position: sticky;
+    top: 0;
+    margin: 10px;
+    
+}
+
+header .navbar {
+    padding: 8px 0;
+}
+
+.navbar-nav {
+   background-color: #f7f7f7;
+    padding: 1rem;
+    border-radius: 0.25rem;
+}
+
+header .navbar .logo h1 {
+    color: #1e1e1e;
+    font-size: 20px;
     font-weight: 900;
-    color: var(--theme-black);
-    transition: 0.3s all ease-in-out;
 }
-.nav-menu ul li a:hover {
+
+header .navbar .logo h1 span {
+    font-size: 44px;
     color: var(--theme-orange);
 }
-.nav-menu ul li:first-child a{
+
+header .navbar .navbar-toggler {
+    border: none;
+    outline: none;
+    background-color: var(--theme-orange);
+}
+
+header .navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+header .navbar .navbar-toggler .navbar-toggler-icon {
+    background-image: none;
+}
+
+header .navbar .navbar-toggler .navbar-toggler-icon::after {
+    content: '\f0c9';
+    color: var(--theme-white);
+    font-size: 18px;
+    line-height: 30px;
+    font-family: 'FontAwesome';
+}
+
+header .navbar-collapse {
+    text-align: center;
+}
+
+header .navbar ul {
+    margin-left: auto !important;
+}
+
+header .navbar ul li {
+    margin: 0 15px;
+}
+
+header .navbar ul li a {
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    padding: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+header .navbar ul li .nav-link {
+    color: #1e1e1e;
+}
+
+header .navbar ul li:first-child a {
     color: var(--theme-orange);
 }
+
+header .navbar ul li a:hover {
+    color: var(--theme-orange);
+}
+
+.nav-item {
+    border-bottom: 1px solid var(--theme-light-gray);
+}
+
+
+
+
 /* Header Section End */
 
 /* Swiper Section Start */
