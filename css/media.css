@@ -8,168 +8,79 @@
 /* ==== Responsive NAVIGATION: below 992px ==== */
 
   /* Base styles for navigation */
-.nav-menu {
-  display: flex;
-}
+/* media.css */
 
-/* Hide the nav menu on small screens */
-@media (max-width: 768px) {
-  .nav-menu {
-    display: none; /* Hide the menu by default */
-    flex-direction: column; /* Stack items vertically */
-    position: absolute; /* Position it absolutely */
-    top: 60px; /* Adjust based on your header height */
-    left: 0;
-    right: 0;
-    background-color: white; /* Background color for dropdown */
-    z-index: 1000; /* Ensure it appears above other content */
-  }
-
-  .nav-menu.show {
-    display: flex; /* Show the menu when toggled */
-  }
-
-  .menu-toggle {
-    display: block; /* Show the toggle button */
-  }
-}
-
-/* Show the toggle button on small screens */
-.menu-toggle {
-  display: none; /* Hide toggle button by default */
-}
-
-/* Show toggle button on small screens */
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block; /* Show toggle button */
-  }
-}
-/* Default: Hide menu toggle on large screens */
-
-
-@media (min-width: 320px) and (max-width: 575px) {
+/* For devices below 768px (tablet and mobile) */
+@media (max-width: 992px) {
+  /* Navigation becomes vertical and collapsible */
   .navigation {
     flex-direction: column;
-    gap: 10px;
-    text-align: center;
+    align-items: flex-start;
   }
 
-  .nav-menu ul {
+  /* Collapse the navbar by default */
+  .navbar-collapse {
+    display: none !important;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  /* Show navbar when expanded */
+  .navbar-collapse.show {
+    display: flex !important;
     flex-direction: column;
-    gap: 10px;
   }
 
-  .col-4,
-  .col-8 {
+  /* Align nav links vertically */
+  nav ul {
+    flex-direction: column;
     width: 100%;
   }
 
-  .post-options ul,
-  .tags ul {
-    flex-wrap: wrap;
-    gap: 10px;
+  nav ul li {
+    margin: 10px 0;
+    border-bottom: #7a7a7a18 solid 1px;
   }
 
-  .swiper {
-    padding: 0 10px;
+  /* Show the toggler button */
+  .navbar-toggler {
+    display: block;
+    margin-left: auto;
+    background-color: var(--theme-orange);
+    border: none;
+    outline: none;
+    
+    
   }
-
-  .swiper-slide img {
-    width: 100%;
-    height: auto;
+  .navbar-toggler:focus{
+    box-shadow: none;
   }
-
-  .button .btn {
-    width: 100%;
+  .navbar-toggler-icon{
+    color: white;
   }
 }
 
-/* Medium devices (tablets) */
-@media (min-width: 576px) and (max-width: 767px) {
-  .nav-menu ul {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
+@media(max-width : 400px){
+  .swiper-button-next,
+    .swiper-button-prev{
+      display: none;
+    }
 
-  .col-4,
-  .col-8 {
-    width: 100%;
-  }
+    .swiper-wrapper .swiper-slide .data h3{
+      font-size: 14px;
 
-  .tags ul {
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  .swiper-slide img {
-    width: 100%;
-    height: auto;
-  }
+    }
+    .swiper-wrapper .swiper-slide .data a h4{
+      font-size: 18px;
+    }
+    .swiper-wrapper .swiper-slide .data a span{
+      font-size: 10px;
+    }
+    .swiper-pagination{
+      display: block;
+      fill: white;
+    }
 }
 
-/* Large devices (small laptops) */
-@media (min-width: 768px) and (max-width: 991px) {
-  .col-4 {
-    width: 100%;
-    order: 2; /* Sidebar comes after blog content */
-  }
 
-  .col-8 {
-    width: 100%;
-    order: 1;
-  }
 
-  .swiper {
-    padding: 0 20px;
-  }
-
-  .nav-menu ul {
-    gap: 20px;
-    justify-content: flex-end;
-  }
-
-  .tags ul {
-    gap: 15px;
-  }
-}
-
-/* Extra large devices (desktops) */
-@media (min-width: 992px) {
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .col-8 {
-    width: 70%;
-    order: 1;
-  }
-
-  .col-4 {
-    width: 100%; /* Sidebar full width below content */
-    order: 2;
-    margin-top: 30px;
-  }
-
-  .navigation {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .nav-menu ul {
-    flex-direction: row;
-    gap: 25px;
-  }
-
-  .swiper-slide img {
-    width: 100%;
-    height: auto;
-  }
-
-  .tags ul {
-    gap: 20px;
-  }
-}
