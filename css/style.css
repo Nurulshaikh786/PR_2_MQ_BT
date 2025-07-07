@@ -3,6 +3,7 @@
     --theme-orange:#f48840;
     --theme-grey:#7a7a7a;
     --theme-white:#fff;
+    --theme-border:#e8e8eb99;
 }
 *{
     padding: 0;
@@ -35,7 +36,7 @@ a{
     text-decoration: none;
 }
 .container{
-    max-width: 1320px;
+    max-width: 90%;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -72,6 +73,7 @@ a{
 .mr-l{
     margin-left: 10px;
 }
+
 /* style.css */
 
 /* Basic styling for the navbar brand */
@@ -84,6 +86,9 @@ header{
     padding: 15px;
     position: sticky;
     top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
 
 }
 
@@ -242,6 +247,56 @@ font-weight: 900;
     font-size: 12px;
 }
     
+.blog-posts{
+    margin-top: 80px;
+}
+.blog-posts .blog-post .data{
+    text-align: justify;
+    padding: 40px;
+    border: 1px solid  var(--theme-border);
+
+
+}
+.blog-posts .blog-post img{
+    width: 100%;
+    
+}
+
+ .blog-posts .blog-post .data h3{
+    color: var(--theme-orange);
+    font-size: 18px;
+text-transform: uppercase;
+font-weight: 900;
+
+}
+ .blog-posts .blog-post .data h4{
+    font-weight: 900;
+    font-size: 20px;
+   
+    color: var(--theme-black);
+    margin: 15px 0;
+}
+ .blog-posts .blog-post .data span a{
+    font-size: 14px;
+    color: var(--theme-grey);
+}
+ .blog-posts .blog-post .data span a::after{
+    content: "|";
+    margin-left: 5px;
+}
+ .blog-posts .blog-post .data p span:last-child a::after{
+    content: "";
+    margin-left: 5px;
+}
+.blog-posts .blog-post .data .detail{
+    border-bottom: 1px solid var(--theme-border);
+    border-top: 1px solid var(--theme-border);
+    padding: 20px 0;
+    color: var(--theme-grey);
+    text-align: justify;
+    font-size: 15px;
+    line-height: 2;
+}
 
 /* Optional: Add some spacing to the right side of the navbar */
 
