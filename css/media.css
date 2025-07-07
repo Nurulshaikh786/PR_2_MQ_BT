@@ -79,6 +79,20 @@
     .swiper-pagination{
       display: block;
     }
+    .template{
+      flex-direction: column;
+    }
+    .template .template-data h2{
+      font-size: 14px;
+    }
+    .template .template-data h3{
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    .template .btn a{
+      padding: 10px;
+      font-size: 10px;
+    }
 }
 
 

@@ -1,70 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Responsive Navbar with Header</title>
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="./Roboto/stylesheet.css">
   <link rel="stylesheet" href="./css/style.css">
-  
+
   <link rel="stylesheet" href="./css/media.css">
 </head>
+
 <body>
 
-<!-- Header Start -->
-<header>
-  <div class="container">
+  <!-- Header Start -->
+  <header>
+    <div class="container">
 
-    <div class="navigation">
-      <nav class="navbar navbar-expand-lg ">
-    
-      <div class="logo">
-        <h2>STAND BLOG<span>.</span></h2>
+      <div class="navigation">
+        <nav class="navbar navbar-expand-lg ">
+
+          <div class="logo">
+            <h2>STAND BLOG<span>.</span></h2>
+          </div>
+
+          <!-- Toggle Button -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Collapsible Menu -->
+          <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">BLOG ENTRIES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">POST DETAILS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACT US</a>
+              </li>
+            </ul>
+
+          </div>
+        </nav>
       </div>
 
-      <!-- Toggle Button -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    </div>
+  </header>
+  <!-- Header End -->
+  <main>
+    <section class="hero">
 
-      <!-- Collapsible Menu -->
-      <div class="collapse navbar-collapse" id="navbarMenu">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="#">ABOUT US</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="#">BLOG ENTRIES</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">POST DETAILS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">CONTACT US</a>
-          </li>
-        </ul>
-      
-    </div>
-  </nav>
-    </div>
-    
-  </div>
-</header>
-<!-- Header End -->
-<main>
- <div class="swiper mySwiper ">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">
-      <img src="./images/banner-item-01.jpg" alt="Slide 1" />
-      <div class="data">
-         <h3>Fashion</h3>
+      <div class="swiper mySwiper ">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/banner-item-01.jpg" alt="Slide 1" />
+            <div class="data">
+              <h3>Fashion</h3>
               <a href="javascript:void(0)">
                 <h4>Morbi dapibus condimentum</h4>
               </a>
@@ -73,12 +77,12 @@
                 <span><a href="javascript:void(0)">May 12, 2020</a></span>
                 <span><a href="javascript:void(0)">12 Comments</a></span>
               </p>
-      </div>
-    </div>
-    <div class="swiper-slide">
-      <img src="./images/banner-item-02.jpg" alt="Slide 2" />
-      <div class="data">
-        <h3>Fashion</h3>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/banner-item-02.jpg" alt="Slide 2" />
+            <div class="data">
+              <h3>Nature</h3>
               <a href="javascript:void(0)">
                 <h4>Morbi dapibus condimentum</h4>
               </a>
@@ -87,12 +91,12 @@
                 <span><a href="javascript:void(0)">May 12, 2020</a></span>
                 <span><a href="javascript:void(0)">12 Comments</a></span>
               </p>
-      </div>
-    </div>
-    <div class="swiper-slide">
-      <img src="./images/banner-item-03.jpg" alt="Slide 3" />
-      <div class="data">
-        <h3>Fashion</h3>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/banner-item-03.jpg" alt="Slide 3" />
+            <div class="data">
+              <h3>Lifestyle</h3>
               <a href="javascript:void(0)">
                 <h4>Morbi dapibus condimentum</h4>
               </a>
@@ -101,12 +105,12 @@
                 <span><a href="javascript:void(0)">May 12, 2020</a></span>
                 <span><a href="javascript:void(0)">12 Comments</a></span>
               </p>
-      </div>
-    </div>
-    <div class="swiper-slide">
-      <img src="./images/banner-item-04.jpg" alt="Slide 4" />
-      <div class="data">
-        <h3>Fashion</h3>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/banner-item-04.jpg" alt="Slide 4" />
+            <div class="data">
+              <h3>Fashion</h3>
               <a href="javascript:void(0)">
                 <h4>Morbi dapibus condimentum</h4>
               </a>
@@ -115,12 +119,12 @@
                 <span><a href="javascript:void(0)">May 12, 2020</a></span>
                 <span><a href="javascript:void(0)">12 Comments</a></span>
               </p>
-      </div>
-    </div>
-    <div class="swiper-slide">
-      <img src="./images/banner-item-05.jpg" alt="Slide 5" />
-      <div class="data">
-        <h3>Fashion</h3>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/banner-item-05.jpg" alt="Slide 5" />
+            <div class="data">
+              <h3>Nature</h3>
               <a href="javascript:void(0)">
                 <h4>Morbi dapibus condimentum</h4>
               </a>
@@ -129,59 +133,87 @@
                 <span><a href="javascript:void(0)">May 12, 2020</a></span>
                 <span><a href="javascript:void(0)">12 Comments</a></span>
               </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="swiper-button-next mr-r"></div>
+        <div class="swiper-button-prev mr-l"></div>
+        <div class="swiper-pagination"></div>
       </div>
-    </div>
-  </div>
 
-  <!-- Navigation Buttons -->
-  <div class="swiper-button-next mr-r"></div>
-  <div class="swiper-button-prev mr-l"></div>
-   <div class="swiper-pagination"></div>
-</div>
+      <div class="container">
+
+        <div class="template d-flex justify-space-between">
+
+          <div class="template-data">
+
+            <h2>Stand Blog HTML5 Template</h2>
+            <h3>Creative HTML Template For Bloggers!</h3>
+
+          </div>
+
+          <div class="btn">
+
+            <a href="">DOWNLOAD NOW!</a>
+
+          </div>
+
+        </div>
+
+        <div class="blog-post-1">
+          
+        </div>
+
+      </div>
+
+
+    </section>!
 
 
 
 
 
-
-<script src="script.js"></script>
-</main>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  const swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 10,
-     cssMode: true,
+    <script src="script.js"></script>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 10,
+      cssMode: true,
       loop: true,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
-       pagination: {
-    el: ".swiper-pagination",
-    clickable: true
-  },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      },
       mousewheel: true,
       keyboard: true,
-    loop: true,
-    autoplay : true,
-    breakpoints: {
-      // when window width is >= 320px
-      100:{
-         slidesPerView: 1
-      },
-      
-      768: {
-        slidesPerView: 2
-      },
-      992: {
-        slidesPerView: 3
+      loop: true,
+      autoplay: true,
+      breakpoints: {
+        // when window width is >= 320px
+        100: {
+          slidesPerView: 1
+        },
+
+        768: {
+          slidesPerView: 2
+        },
+        992: {
+          slidesPerView: 3
+        }
       }
-    }
-  });
-</script>
+    });
+  </script>
 
 
 </body>
+
 </html>
