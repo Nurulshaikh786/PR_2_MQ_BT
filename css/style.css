@@ -1,7 +1,7 @@
 :root{
     --theme-black:#20232e;
     --theme-orange:#f48840;
-    --theme-grey:#7a7a7a;
+ --theme-grey:#eceff8d3;
     --theme-white:#fff;
     --theme-border:#e8e8eb99;
 }
@@ -82,8 +82,8 @@ a{
 /* Styling for navigation links */
 header{
     background-color: #f7f7f7;
-    margin: 10px;
-    padding: 15px;
+    margin: 5px;
+    padding: 10px;
     position: sticky;
     top: 0;
     left: 0;
@@ -174,14 +174,13 @@ height: auto;
 
     .swiper-wrapper .swiper-slide .data{
          position: absolute;
-    bottom: 0;
+bottom: 0;
     padding: 30px;
-    text-align: center;
-    width: 80%;
-    left: 50%;
-    top: 50%;
-    bottom: auto;
-    transform: translate(-50%, -50%);
+    text-align: left;
+    width: auto;
+    left: auto;
+    top: auto;
+   
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -196,7 +195,6 @@ font-weight: 900;
 .swiper-wrapper .swiper-slide .data a h4{
     font-weight: 900;
     font-size: 24px;
-    text-transform: uppercase;
     color: var(--theme-white);
 }
 .swiper-wrapper .swiper-slide .data span a{
@@ -249,6 +247,7 @@ font-weight: 900;
     
 .blog-posts{
     margin-top: 80px;
+    
 }
 .blog-posts .blog-post .data{
     text-align: justify;
@@ -256,6 +255,10 @@ font-weight: 900;
     border: 1px solid  var(--theme-border);
 
 
+}
+.blog-posts .blog-post{
+margin-right: 30px;
+margin-bottom: 50px;
 }
 .blog-posts .blog-post img{
     width: 100%;
@@ -298,5 +301,88 @@ font-weight: 900;
     line-height: 2;
 }
 
+.blog-posts .side-bar input::placeholder{
+    color: var(--theme-grey);
+    font-size: 12px;
+    font-family: "Roboto";
+    font-weight: 600;
+   
+}
+.blog-posts .side-bar input{
+    border: 1px solid var(--theme-border);
+    padding: 10px;
+    outline: none;
+    width: 100%;
+}
+
+.blog-posts .side-bar .recent-post h2{
+    font-size: 20px;
+    color: var(--theme-black);
+    margin-top: 20px;
+    padding-bottom: 30px;
+    font-weight: 800;
+    border-bottom: 1px solid var(--theme-border);
+}
+
+.blog-posts .side-bar .recent-post  ul  li a{
+   font-size: 20px;
+    margin-left: 0;
+    font-weight: 800;
+   margin :20px 20px 20px 0;
+    
+}
+.blog-posts .side-bar .recent-post ul li a{
+    color: var(--theme-black);
+    text-align: right;
+    transition: all 0.3s ease;
+}
+.blog-posts .side-bar .recent-post ul {
+    padding: 0;
+}
+
+.blog-posts .side-bar .recent-post ul li span{
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--theme-grey);
+    padding-top: 15px;
+    padding-bottom: 25px;
+    border-bottom: 
+    1px solid var(--theme-border);
+}
+
+.blog-posts .side-bar .recent-post ul li a:hover{
+    color: var(--theme-orange);
+}
+
+.blog-posts .side-bar .recent-post .cat ul li a{
+    font-size: 16px;
+    font-weight: 600;
+}
+.blog-posts .side-bar .recent-post .cat ul li{
+    margin: 25px 0;
+}
+
+.blog-posts .side-bar .recent-post .clouds ul li{
+    display:inline-block;
+    margin: 15px;
+}
+.blog-posts .side-bar .recent-post .clouds ul li a{
+    color: var(--theme-grey);
+    border: 1px solid var(--theme-border);
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px 5px;
+    transition: all .3s ease;
+
+}
+.clouds ul{
+    margin-top: 50px;
+}
+
+.blog-posts .side-bar .recent-post .clouds ul li a:hover{
+    color: var(--theme-white);
+    background-color: var(--theme-orange);
+}
 /* Optional: Add some spacing to the right side of the navbar */
 
